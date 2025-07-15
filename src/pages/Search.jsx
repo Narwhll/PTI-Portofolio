@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { use, useState } from 'react'
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Search.css'
@@ -10,11 +10,14 @@ export default function Search() {
     const [searchResult, setResult] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
+    const [udahSubmit, setudahSubmit] = useState(false);
+    const [gagal, setGagal] = useState(false);
 
     async function fetchMeals(searchName) {
         if (!searchName.trim()) {
             setResult([]);
             setLoading(false);
+            setudahSubmit(false);
             return;
         }
         setLoading(true);
@@ -38,6 +41,7 @@ export default function Search() {
     function handleSubmit(e) {
         e.preventDefault();
         fetchMeals(query);
+        setudahSubmit(true);
     }
 
     return (
@@ -53,7 +57,11 @@ export default function Search() {
             </div>
             {loading && <div className="pesan"> Loading.. </div>}
             {error && <div className="pesan"> {error} </div>}
-            {!loading && !error && query.length > 0 && searchResult.length === 0 && <p className="pesan">Menu not found!</p>}
+            {!loading && !error && searchResult.length === 0 && query.length > 0 && udahSubmit && <p className="pesan">Menu not found!</p>}
+            {!loading && !error && !udahSubmit || query.length === 0 && searchResult.length === 0 && 
+            <div className="carisekarang">Search the menu for delicious meals. 
+            <br></br>for example: chicken, burger, or whatever you want!</div>
+                }
             {!loading && !error && searchResult.length > 0 && (
                 <div className="listmeal">
                     {searchResult.map((meal) => (<MealCard key = {meal.idMeal} meal={meal}/>))}

@@ -84,6 +84,19 @@
     background-color: rgb(255, 206, 133);
 }
 
+.carisekarang {
+    background-color: azure;
+    text-decoration: none;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 10px 80px;
+    line-height: 2rem;
+    color: inherit;
+    border-radius: 20px;
+    border: 2px solid rgb(148, 99, 1);
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
 .pesan {
     text-align: center;
     font-size: 3rem;
