@@ -1,0 +1,119 @@
+
+
+.box {
+    box-sizing: border-box;
+    margin: 20px 20px;
+    gap: 20px;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.box h1 {
+    font-size: 3rem;
+}
+
+.box .desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.gambar {
+    border-radius: 30px;
+    width: 25em;
+    height: 25em;
+}
+
+.notitle h2 {
+    margin-left: auto;
+    text-align: right;
+    text-decoration: underline;
+    line-height: 0;
+}
+
+.notitle {
+    margin-left: auto;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: right;
+    line-height: 1.2rem;
+    box-sizing: border-box;
+}
+
+.notitle ul {
+    list-style: none;
+}
+
+.tomboludah {
+    background-color: rgb(255, 153, 0);
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-family: inherit;
+    color: rgb(0, 0, 0);
+}
+
+.tombolbelum {
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-family: inherit;
+    color: rgb(0, 0, 0);
+}
+
+.tombolbelum:hover {
+    cursor: pointer;
+    background-color: rgb(255, 153, 0);
+}
+
+.tomboludah:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+.instruksi {
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    display: block;
+    line-height: 1.2rem;
+    white-space: pre-wrap;
+    border-radius: 30px;
+    padding: 20px 20px;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:850px) {
+    .box {
+        box-sizing: border-box;
+        margin: 10px 10px;
+        background-color: blanchedalmond;
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        gap: 0;
+        flex-direction: column;
+        /* border: 10px solid black; */
+    }
+    .gambar {
+        border-radius: 30px;
+        width: 20em;
+        height: 20em;
+    }
+    .notitle {
+        display: flex;
+        margin: 0px 0px;
+        text-align: center;
+        line-height: 1.2rem;
+        box-sizing: border-box;
+        /* border: 10px solid black; */
+    }  
+    .notitle ul {
+        padding: 0px 0px;
+    }
+    .notitle h2 {
+        margin-left: 0;
+    }
+}

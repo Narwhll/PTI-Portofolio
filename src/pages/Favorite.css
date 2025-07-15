@@ -1,0 +1,37 @@
+
+
+.listmeals {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: flex;
+    margin-top: 2vw;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.titlemeals {
+    margin-left: 1vw;
+    font-size: 2rem;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 5px 4px 5px rgba(0,0,0,0.52);
+    color: white;
+}
+
+.belomada {
+    background-color: blanchedalmond;
+    margin: 2vw 2vw;
+    border: 2px solid rgb(148, 99, 1);
+    border-radius: 20px;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media (max-width:800px) {
+    .titlemeals {
+        font-size: 2rem;
+        text-align: center;
+        text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 5px 4px 5px rgba(0,0,0,0.52);
+        color: white;
+    }
+}

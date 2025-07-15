@@ -1,0 +1,62 @@
+
+body {
+    margin:0;
+}
+
+.navbar {
+    position: fixed;
+    background-color: rgb(255, 170, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 10px; */
+    width: 100%;
+    padding: clamp(5px, .5vw, 10px) clamp(10px, 5vw, 50px);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    box-sizing: border-box;
+    gap: 2rem;
+    box-shadow: 0px 2px 25px -6px rgba(0, 0, 0, 0.8);
+}
+
+.pizzatitle {
+    width: 1em;
+    height: 1em;
+    margin-right: 8px;
+    filter: drop-shadow(1px 1px 100px rgba(0, 0, 0, 0.5));
+}
+
+.title {
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+}
+
+.navbar ul {
+    box-sizing: border-box;
+    margin: 0;
+    align-items: center;
+    padding: 1rem 0;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+}
+
+
+.navbar .kanan a {
+    text-decoration: none;
+    color: inherit; 
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: 10px solid transparent;
+}
+
+.navbar .kanan a:hover {
+    background-color: rgb(216, 144, 0);
+    border-radius: 20px;
+}

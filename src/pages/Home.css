@@ -1,0 +1,37 @@
+.herosection {
+    font-family: inherit;
+    padding: min(3em, 5%);
+    font-size: clamp(2rem, 4vw, 8rem);
+    display: flexbox;
+    color: rgb(255, 255, 255);
+    margin-top: auto;
+    /* color: rgb(255, 170, 0); */
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 5px 4px 5px rgba(0,0,0,0.52);
+}
+
+.titlenya {
+    display: flex;
+}
+
+.pizzalogo {
+    width: 1em;
+    height: 1em;
+    margin-right: 20px;
+    filter: drop-shadow(5px 7px 4px rgba(0, 0, 0, 0.5));
+}
+
+.subtitle {
+    font-size: 0.75em;
+    line-height: .5;
+}
+
+@media (max-width:768px) {
+    .herosection {
+        font-size: 2rem;
+    }
+    .subtitle {
+        line-height: 2;
+    }
+
+}
+
