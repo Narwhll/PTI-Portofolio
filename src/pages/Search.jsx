@@ -57,8 +57,8 @@ export default function Search() {
             </div>
             {loading && <div className="pesan"> Loading.. </div>}
             {error && <div className="pesan"> {error} </div>}
-            {!loading && !error && searchResult.length === 0 && query.length > 0 && udahSubmit && <p className="pesan">Menu not found!</p>}
-            {!loading && !error && !udahSubmit || query.length === 0 && searchResult.length === 0 && 
+            {!loading && !error && searchResult.length === 0  && udahSubmit && <p className="pesan">Menu not found!</p>}
+            {!loading && !error && !udahSubmit && searchResult.length === 0 && 
             <div className="carisekarang">Search the menu for delicious meals. 
             <br></br>for example: chicken, burger, or whatever you want!</div>
                 }
