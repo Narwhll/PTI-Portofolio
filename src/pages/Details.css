@@ -120,4 +120,12 @@
     .notitle h2 {
         margin-left: 0;
     }
+    .tombolbelum:hover {
+        cursor: pointer;
+        background-color: white;
+    }
+    .tomboludah:hover {
+        cursor: pointer;
+        background-color: rgb(255, 153, 0);
+    }
 }
