@@ -95,6 +95,7 @@
         border-radius: 30px;
         gap: 0;
         flex-direction: column;
+        text-align: center;
         /* border: 10px solid black; */
     }
     .gambar {

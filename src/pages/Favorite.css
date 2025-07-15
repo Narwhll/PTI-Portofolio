@@ -34,4 +34,14 @@
         text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 5px 4px 5px rgba(0,0,0,0.52);
         color: white;
     }
+    .belomada {
+        background-color: blanchedalmond;
+        margin: 8vw 4vw;
+        border: 2px solid rgb(148, 99, 1);
+        border-radius: 30px;
+        box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.5);
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
 }
