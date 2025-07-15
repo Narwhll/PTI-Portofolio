@@ -75,31 +75,31 @@ export default function Details () {
 
     if (loading) {
         return (
-            <div class="pesan"> Loading.. </div>
+            <div className="pesan"> Loading.. </div>
         )
     }
     if (error) {
         return (
-            <div class="pesan"> {error} </div>
+            <div className="pesan"> {error} </div>
         )
     }
     if (!mealDetails) {
         return (
-            <div class="pesan">Meal not found.</div>
+            <div className="pesan">Meal not found.</div>
         )
     }
     return (
         <>
-        <div class="box">
-            <img src={mealDetails.strMealThumb} alt={mealDetails.strMeal} class="gambar"></img>
+        <div className="box">
+            <img src={mealDetails.strMealThumb} alt={mealDetails.strMeal} className="gambar"></img>
             <h1>{mealDetails.strMeal} <br></br>
-                <p class="desc">{mealDetails.strCategory ? mealDetails.strCategory : ''}<br></br>
+                <p className="desc">{mealDetails.strCategory ? mealDetails.strCategory : ''}<br></br>
                 {mealDetails.strArea ? mealDetails.strArea : ''}
                 </p>
                 {udahFav()}
             </h1>
             
-            <div class="notitle">
+            <div className="notitle">
                 <h2>Ingredients</h2>
                 <ul>
                     {
@@ -120,7 +120,7 @@ export default function Details () {
                 </ul>
             </div>
         </div>
-        <div class="instruksi">
+        <div className="instruksi">
             {mealDetails.strInstructions}
         </div>
         </>

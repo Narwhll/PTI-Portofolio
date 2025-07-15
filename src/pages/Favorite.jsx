@@ -27,7 +27,7 @@ export default function Favorite() {
     } 
 
     return (
-        <div class="listmeals">
+        <div className="listmeals">
             <h1 className='titlemeals'>Your Favorite Meals</h1>
             {favMeals.map((meal) => (<MealCard key = {meal.idMeal} meal={meal}/>))}
         </div>

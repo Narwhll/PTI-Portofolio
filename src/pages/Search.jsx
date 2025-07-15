@@ -41,21 +41,21 @@ export default function Search() {
     }
 
     return (
-        <div class="boxsearch">
+        <div className="boxsearch">
             <div className="Search">
                 <h1>Search</h1>
-                <form onSubmit={handleSubmit} class="searchbutton">
+                <form onSubmit={handleSubmit} className="searchbutton">
                     <input type="text" onChange={e => setQuery(e.target.value)} placeholder='Search for your favorite meals..' className='searchbar' />
-                    <button type="submit" class="tombolsearch">
-                        <img src={searchLogo} alt="Logo" class="logocari"></img>
+                    <button type="submit" className="tombolsearch">
+                        <img src={searchLogo} alt="Logo" className="logocari"></img>
                     </button>
                 </form>
             </div>
-            {loading && <div class="pesan"> Loading.. </div>}
-            {error && <div class="pesan"> {error} </div>}
-            {!loading && !error && query.length > 0 && searchResult.length === 0 && <p class="pesan">Menu not found!</p>}
+            {loading && <div className="pesan"> Loading.. </div>}
+            {error && <div className="pesan"> {error} </div>}
+            {!loading && !error && query.length > 0 && searchResult.length === 0 && <p className="pesan">Menu not found!</p>}
             {!loading && !error && searchResult.length > 0 && (
-                <div class="listmeal">
+                <div className="listmeal">
                     {searchResult.map((meal) => (<MealCard key = {meal.idMeal} meal={meal}/>))}
                 </div>)}
         </div>

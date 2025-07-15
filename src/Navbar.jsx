@@ -5,11 +5,11 @@ import pizzaLogo from './assets/pizza.png'
 
 function Navbar() {
     return (
-        <nav class="navbar">
-            <Link to="/" class="title">
-            <img src={pizzaLogo} alt="Logo" class="pizzatitle"></img> Malmeal.
+        <nav className="navbar">
+            <Link to="/" className="title">
+            <img src={pizzaLogo} alt="Logo" className="pizzatitle"></img> Malmeal.
             </Link>
-            <ul class="kanan">
+            <ul className="kanan">
                 <li>
                     <Link to="/fav">Favorite</Link>
                 </li>

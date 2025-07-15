@@ -5,14 +5,14 @@ import './App.css'
 import Home from './pages/Home'
 import Favorite from './pages/Favorite'
 import Details from './pages/Details'
-import Navbar from './navbar'
+import Navbar from './Navbar.jsx'
 import { Route, Routes } from 'react-router-dom' 
 import Search from './pages/Search'
 function App() {
   return (
     <>
     <Navbar />
-    <div class="container">
+    <div className="container">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fav" element={<Favorite/>} />
