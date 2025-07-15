@@ -36,8 +36,17 @@ body {
 @media (max-width:768px) {
   :root {
     background-image: url(assets/backgkecil.png);
-    background-position: center;
-    background-size: cover;
+    background-position: bottom;
+    background-size: 768px 860px;
+  }
+
+}
+
+@media (max-width:540px) {
+  :root {
+    background-image: url(assets/backgkecil.png);
+    background-position: bottom;
+    background-size: 540px 860px;
   }
 
 }

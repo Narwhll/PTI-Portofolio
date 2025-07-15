@@ -32,6 +32,12 @@
     .subtitle {
         line-height: 2;
     }
+}
 
+@media (max-width:400px) {
+    .herosection {
+        font-size: 1.6rem;
+    }
+    
 }
 
